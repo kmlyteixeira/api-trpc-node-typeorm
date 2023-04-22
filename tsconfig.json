@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"target": "es2018", // versão do javascript que o typescript vai compilar
+		"lib": ["es5", "es6", "ES2018"], // bibliotecas que o typescript vai utilizar
+		"experimentalDecorators": true, // habilita o uso de decorators
+		"emitDecoratorMetadata": true, // habilita o uso de decorators
+		"module": "commonjs", // define o tipo de módulo que o typescript vai utilizar
+		"moduleResolution": "node", // define o tipo de módulo que o typescript vai utilizar
+		"resolveJsonModule": true, // habilita o uso de json
+		"allowJs": true, // habilita o uso de javascript
+		"outDir": "./dist", // define a pasta de saída do javascript
+		"esModuleInterop": true, // habilita o uso de import/export
+		"forceConsistentCasingInFileNames": true, // força o uso de nomes de arquivos em caixa baixa
+		"strict": true, // habilita o uso de strict mode
+		"noImplicitAny": true, // não permite o uso de any
+		"strictPropertyInitialization": false // permite o uso de propriedades não inicializadas
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"],
+	"ts-node": {
+		"files": true
+	}
+}
