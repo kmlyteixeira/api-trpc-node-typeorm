@@ -12,6 +12,7 @@
 ~~~
 
 > <h3 align="left"> Functions </h3>
+
 - <h4 align="left"> getUsers </h4>
     Retrieves a list of all users.  
     
