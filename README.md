@@ -12,7 +12,23 @@
 ~~~
 
 > <h3 align="left"> Functions </h3>
-
+    
+- <h4 align="left"> getUser(id: number) </h4>
+    Retrieves a user with the specified id. 
+    
+    :mag_right: Request:
+    ~~~ts
+    await trpc.getUser.query(<user_id>)
+    ~~~
+    
+    :mag: Response: 
+    ~~~ts
+        {
+          id: <user_id>,
+          name: <user_name>
+        }
+    ~~~
+    
 - <h4 align="left"> getUsers </h4>
     Retrieves a list of all users.  
     
@@ -33,22 +49,6 @@
           name: <user_name>
         }
       ]
-    ~~~
-    
-- <h4 align="left"> getUser(id: number) </h4>
-    Retrieves a user with the specified id. 
-    
-    :mag_right: Request:
-    ~~~ts
-    await trpc.getUser.query(<user_id>)
-    ~~~
-    
-    :mag: Response: 
-    ~~~ts
-        {
-          id: <user_id>,
-          name: <user_name>
-        }
     ~~~
     
 - <h4 align="left"> deleteUser(id: number) </h4>
